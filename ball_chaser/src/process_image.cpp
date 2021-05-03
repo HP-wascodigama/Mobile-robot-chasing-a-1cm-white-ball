@@ -7,13 +7,13 @@ using namespace std;
 #include "ball_chaser/DriveToTarget.h"
 #include <sensor_msgs/Image.h>
 
-// Define a global client that can request services
+// Defining a global client that can request services
 ros::ServiceClient client;
 
 // This function calls the command_robot service to drive the robot in the specified direction
 void drive_robot(float lin_x, float ang_z)
 {
-    // TODO: Request a service and pass the velocities to it to drive the robot
+    // Request a service and pass the velocities to it to drive the robot
     ball_chaser::DriveToTarget srv;
     srv.request.linear_x = lin_x;
     srv.request.angular_z = ang_z;
@@ -31,7 +31,7 @@ void process_image_callback(const sensor_msgs::Image img)
     int front_counter = 0;
     int right_counter = 0;
 	
-    // TODO: 
+    
     // Loop through each pixel in the image and check if there's a bright white one
     for (int i = 0; i < img.height * img.step; i += 3) {
         int position_index = i % (img.width * 3) / 3;

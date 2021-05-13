@@ -2,7 +2,7 @@
 Using ROS, Gazebo and Rviz chasing 1cm white ball with wheeled mobile robot carring with cmera and laidar sensors
 
 #initial setup
-1. install ros-noetic in ubuntu
+1. install ros-noetic in ubuntu (http://wiki.ros.org/noetic/Installation/Ubuntu)
 2. creat catkin workspace and source dirctory
 3. $cd ~/catkin_ws
 4. $catkin_make

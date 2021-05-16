@@ -26,5 +26,9 @@ Using ROS, Gazebo and Rviz chasing 1cm white ball with wheeled mobile robot carr
 22. 2. select Add tab and select camera and choose image_topic
 23. 3. Add robot model
 24. 4. Add LaserScan option and then choose Topic -> /scan
+25. Or you can directly launch rviz by running these cmmands in another terminal if you also added .rviz and .launch files in src directory
+26. $cd /src
+27. $ roslaunch RvizLaunchChase.launch 
+28. 
 
 Now you would be able to find my_ball in insert option of gazebo, select it and put in workframe. Robot will chase when it found white ball in it's camera range.
